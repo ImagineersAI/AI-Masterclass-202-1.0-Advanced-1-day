@@ -18,7 +18,7 @@ This section is my judgement from how AI adoption usually goes. It is not data f
 
 **The rule under all your advanced tools can be taught in one sentence.** Anything that must be the same every time is taken away from the AI and put in a file. The look goes in the template, the sums go in the program, and the AI keeps only the judgement.
 
-**Tools get good through versions.** Every step ends with a numbered copy of the tool saved from Cowork into the working folder. Delegates practise restoring one of those copies, then keep a private backup on GitHub. Do not rely on the conversation alone as the saved tool.
+**Tools get good through versions.** Every step ends with a numbered copy of the tool saved from Cowork into the working folder. Delegates practise restoring one of those copies, then upload the finished tool to the shared course folder. Do not rely on the conversation alone as the saved tool.
 
 **A tool built in a workshop is usually dead by Monday.** It survives when it is tied to something that recurs, such as a monthly report or a weekly meeting. So each delegate picks a real recurring job at 08:30 and names the date of its first real run at the close.
 
@@ -48,7 +48,7 @@ A finished copy of each worked example exists at every step. A delegate who fall
 | 2. Have the AI interview you and improve it | Reviews three real inputs, challenges assumptions and interviews the delegate. Agrees business rules, functions, evidence and exceptions. Rewrites the prompt, adds a delivery checklist and reruns the examples. | The first prompt missed things the delegate never thought to say | Version 2 |
 | 3. Create the template | Builds HTML input and result pages with required fields, consistent headings, evidence and warnings. Saves, damages and restores a version. | The layout drifted between runs | Version 3 |
 | 4. Add the Python program | Moves exact calculations, sorting and checks into Python. Checks inputs, output and evidence, reducing repeated model calls. Compares three results with answers worked out by hand. | The AI's arithmetic cannot be trusted | Version 4 |
-| 5. Test it and prepare it for handover | Generates ordinary, difficult and broken inputs with checked expected answers. Runs batch tests and reruns after fixes. Adds start-here instructions and sample inputs. A separate Cowork task reviews it; a neighbour runs it without help. | The neighbour gets stuck where the delegate assumed too much | Version 5, sent to GitHub |
+| 5. Test it and prepare it for handover | Generates ordinary, difficult and broken inputs with checked expected answers. Runs batch tests and reruns after fixes. Adds start-here instructions and sample inputs. A separate Cowork task reviews it; a neighbour runs it without help. | The neighbour gets stuck where the delegate assumed too much | Version 5, uploaded to the shared course folder |
 
 Checking is built into all five steps. Step 2 adds the checklist. In step 4 delegates trace three figures by hand. Step 5 uses batch tests and a separate Cowork review task. A fresh task does not replace known-answer tests.
 
@@ -60,15 +60,15 @@ Checking is built into all five steps. Step 2 adds the checklist. In step 4 dele
 | Lunch | Move the sums into a program and test it on the three inputs | A tested program for step 4 |
 | Afternoon coffee | A separate Cowork task reviews the whole tool and runs its tests | The fix list for the neighbour test |
 
-## Saved versions and GitHub
+## Saved versions and the shared course folder
 
-Delegates use Cowork for the build and a browser for course-pack access and private backup. Teach three actions without terminal commands:
+Delegates use Cowork for the build and a browser to download the course pack and hand in their finished tool. Teach three actions without terminal commands:
 
 - **Save a version.** Ask Cowork to save a numbered copy of the complete tool into the connected working folder after every step. Check the files in Finder or File Explorer.
 - **Go back.** Keep version 2, deliberately damage a later copy in step 3, then restore the saved version. Check the restored files before continuing.
-- **Keep a private GitHub copy.** Use github.com to download the private course pack and upload the finished tool to the delegate's private repository. Check that the upload is private and complete. Rehearse browser upload and archive handling before the course; do not assume Cowork can push to GitHub directly.
+- **Hand in the finished tool.** Download the course pack from the shared folder link. At the end, zip the finished tool and upload it to the shared course folder in a browser. Check the upload is complete. Rehearse the download, unzip and upload before the course.
 
-Keep company documents out of the shared pack and GitHub backup unless the delegate chooses otherwise. Use sample inputs for handover. Keep the course working folder outside OneDrive, iCloud and Dropbox.
+Keep company documents out of the shared course folder unless the delegate chooses otherwise. Use sample inputs for handover. Keep the course working folder outside OneDrive, iCloud, Google Drive and Dropbox.
 
 ## The day
 
@@ -89,12 +89,12 @@ Keep company documents out of the shared pack and GitHub backup unless the deleg
 | 13:50 | Make your AI subscription go further | Key-value (KV) cache in 15 minutes: reuse stable context, recognise cache expiry and reduce repeated processing where supported. Explain token spend and usage limits. Delegates keep a one-page card. |
 | 14:05 | Step 5: safe to hand over | The third long job starts before coffee. |
 | 14:45 | Coffee | |
-| 15:00 | The neighbour test | Swap, run, fix, save version 5, send to GitHub. |
+| 15:00 | The neighbour test | Swap, run, fix, save version 5, upload to the shared course folder. |
 | 15:30 | Show and share | Three tools shown on the main screen. Every delegate's finished tool is added to the shared course pack, so everyone takes home every tool built by the group. Share sample inputs, without company documents. |
 | 15:50 | From you to your company | The playbook, applied to what they built. This session starts at 15:50 whatever has happened before it. |
 | 16:30 | The rest of the pack | A fast showing of the other tools they take home, and how updates arrive. |
 | 16:45 | First real run date, and survey | Each delegate names the date their tool is first used for real. |
-| 17:00 | End | A working tool on the laptop and a private copy on GitHub. |
+| 17:00 | End | A working tool on the laptop and a copy in the shared course folder. |
 | 17:10 | Final questions end | Allow until 17:10 for final questions. |
 
 ## Where the rest of your list went
@@ -126,12 +126,12 @@ Delegates answer three questions for their own company. Which five recurring job
 - **Computer confidence.** Delegates must meet the everyday computer skills checklist in `03 Pre-installs.md`. No coding experience is required.
 - **A chosen tool.** Each delegate sends two choices from `04 Tool ideas.md`, and you confirm one tool per delegate so that no two are the same.
 - **Material.** Three real examples of the input for their chosen tool, and one example of a good finished output if they have one.
-- **GitHub usernames.** Delegates send theirs ahead, so that you can give them access to the private pack.
+- **Course pack link.** Email each delegate the shared folder link before the day. No account is needed to download.
 - **A fallback.** Sample material for each worked example, for delegates who cannot bring company documents.
 
 ## The pack
 
-The pack is one private GitHub folder. Each tool inside it is its own folder of files, laid out like `05 Excel model creation/Pipeline versions/v3.3 Better charts/inputs`.
+The pack is one shared folder, opened from a link. Each tool inside it is its own folder of files, laid out like `05 Excel model creation/Pipeline versions/v3.3 Better charts/inputs`.
 
 - **The three worked examples**, each with a finished copy at every step.
 - **Every delegate's finished tool**, collected at 15:30 and shared with the group. Include instructions and sample inputs. Keep company documents out of the shared pack.
@@ -139,7 +139,7 @@ The pack is one private GitHub folder. Each tool inside it is its own folder of 
 - **Our latest finished tools:** Excel model builder, board pack reader, dashboard builder, Gantt creator, hand-drawn slide, slide script builders, explainer video and issue tree. Supply current versions, including improvements since earlier courses.
 - **Starters:** the workspace layout, the memory folder and the query index.
 - **Everyday prompts as files:** Handoff, Humanise, RCTIO, Confirm.
-- **Cards:** token costs, saving and restoring versions, private GitHub copies, the checking habits.
+- **Cards:** token costs, saving and restoring versions, handing in to the shared course folder, the checking habits.
 - **Company material:** the playbook and the First 100 Days page.
 
 ## What I am not sure about
@@ -155,7 +155,7 @@ The pack is one private GitHub folder. Each tool inside it is its own folder of 
 
 1. The three worked examples, each with a finished copy at all five steps and sample material.
 2. Build notes for each of the thirty tools: what the template shows, what the program works out, and what to push the delegate towards.
-3. The pack folder on GitHub, with the Navigants tools moved across as folders of files.
+3. The shared pack folder, with the Navigants tools moved across as folders of files.
 4. The setup guide in `03 Pre-installs.md`, tested on a clean Mac and a clean Windows laptop.
 5. The memory starter and query index, with RJ.
 6. The three cards and the playbook worksheet.

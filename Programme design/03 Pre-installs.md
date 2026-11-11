@@ -36,7 +36,7 @@ The subscription is separate from the course fee. An existing higher Claude plan
 
 ## Prepare your course pack access and material
 
-- Create a free account at [github.com/signup](https://github.com/signup), or sign in to your existing account. Verify your email and send us your GitHub username so we can give you access to the private course pack. No Git command-line setup is required.
+- We will email you a link to the course pack folder before the day. You do not need an account or sign-up to download it.
 
 - Send your first and second choice from [the tool list](../docs/index.html#tools). Earlier bookings get first priority. We will confirm your tool before the day.
 
