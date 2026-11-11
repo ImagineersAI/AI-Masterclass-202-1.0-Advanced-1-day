@@ -20,7 +20,7 @@ This section is my judgement from how AI adoption usually goes. It is not data f
 
 ## What they build
 
-Every delegate builds the same shape of tool: files go in, and one finished page comes out. They choose before the day from the thirty tools in `04 Tool ideas.md`, and each tool goes to one delegate only.
+Every delegate builds the same shape of tool: files go in, and one finished page comes out. They choose before the day from the thirty tools in `04 Tool ideas.md`. Each tool is built by one delegate, then shared with the group at 15:30.
 
 Each of the thirty needs only a small input, such as one document or a page of notes. You and RJ think through the functions of all thirty in advance, so that you can prompt each delegate as they build.
 
@@ -87,7 +87,7 @@ Two rules protect delegates. Every GitHub copy is private. Company documents sit
 | 14:05 | Round 5: safe to hand over | The third long job starts before coffee. |
 | 14:45 | Coffee | |
 | 15:00 | The neighbour test | Swap, run, fix, save version 5, send to GitHub. |
-| 15:30 | Show and tell | Three tools shown on the main screen. |
+| 15:30 | Show and share | Three tools shown on the main screen. Every delegate's finished tool is added to the shared course pack, so everyone takes home every tool built by the group. Share sample inputs, without company documents. |
 | 15:50 | From you to your company | The playbook, applied to what they built. This session starts at 15:50 whatever has happened before it. |
 | 16:30 | The rest of the pack | A fast showing of the other tools they take home, and how updates arrive. |
 | 16:45 | First real run date, and survey | Each delegate names the date their tool is first used for real. |
@@ -129,6 +129,7 @@ Delegates answer three questions for their own company. Which five recurring job
 The pack is one private GitHub folder. Each tool inside it is its own folder of files, laid out like `05 Excel model creation/Pipeline versions/v3.3 Better charts/inputs`.
 
 - **The three worked examples**, each with a finished copy at every round.
+- **Every delegate's finished tool**, collected at 15:30 and shared with the group. Include instructions and sample inputs. Keep company documents out of the shared pack.
 - **The tool ideas list**, for the next tools they build.
 - **Finished tools:** Excel model builder, Dashboard builder, and the Navigants tools you choose to move across.
 - **Starters:** the workspace layout, the memory folder and the query index.

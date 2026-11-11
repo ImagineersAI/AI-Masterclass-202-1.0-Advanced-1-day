@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=3">
   <script src="site.js?v=2" defer></script>
 </head>
 <body>
@@ -42,6 +42,7 @@
             <li>A finished skill or plugin for a recurring job you choose.</li>
             <li>A repeatable format, a program for the calculations, and checks before delivery.</li>
             <li>Saved versions on your laptop and a private copy on GitHub.</li>
+            <li>A copy of every tool built by the other delegates, with sample inputs.</li>
             <li>Our finished tools, starter files and a plan for your next 100 days.</li>
           </ul>
         </aside>
@@ -49,25 +50,29 @@
     </section>
     <div class="container course-content">
       <details class="course-section" id="design" open>
-        <summary><span class="section-heading"><span class="label">How the day works</span><span class="section-title" role="heading" aria-level="2">One business tool, built in four steps.</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
+        <summary><span class="section-heading"><span class="label">How the day works</span><span class="section-title" role="heading" aria-level="2">One business tool, built in five steps.</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
         <div class="section-body">
           <p class="section-intro">You spend the day developing a complete business skill or plugin. Choose from 30 tools before the course, then build yours around three real examples from your work.</p>
           <p>The skill or plugin is a folder of instructions, prompts, templates and a small program. You can use it with Claude or ChatGPT. Each step ends with a saved version you can return to.</p>
           <ol class="build-steps">
 <li><details class="build-step" id="step-1">
-      <summary><span class="step-heading"><span class="step-number">Step 1</span><span class="step-title" role="heading" aria-level="3">Write and improve the prompt.</span><span class="step-intro">Turn your knowledge of the job into clear instructions the AI can follow.</span><span class="step-cue">Read why and what you will do</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
-      <div class="step-body"><h4>Why this matters</h4><p>A short request leaves the AI to guess what matters. It may skip a business rule, make an assumption or give a different answer next time. Your tool needs the method an experienced person would follow.</p><h4>What you will do</h4><p>Write the first prompt and run it twice on the same input. Then ask the AI to test three real examples and interview you about what it missed. Add your rules, the required evidence and a checklist for delivery.</p><h4>What you will have</h4><p>A tested set of instructions that describes the job, the inputs, the method and what a good result must contain.</p></div>
+      <summary><span class="step-heading"><span class="step-number">Step 1</span><span class="step-title" role="heading" aria-level="3">Write the prompt.</span><span class="step-intro">Describe the job and see what your first instructions produce.</span><span class="step-cue">Read why and what you will do</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
+      <div class="step-body"><h4>Why this matters</h4><p>A short request leaves the AI to guess what matters. It may skip a business rule, make an assumption or give a different answer next time. Your tool needs the method an experienced person would follow.</p><h4>What you will do</h4><p>Write a prompt that describes the job, the input, the method and the output you need. Run it twice on the same input and compare the answers. Save this first version. Before coffee, ask the AI to try three real inputs and report where the prompt fails.</p><h4>What you will have</h4><p>A first working prompt, a saved version and examples of what needs to improve.</p></div>
     </details></li>
 <li><details class="build-step" id="step-2">
-      <summary><span class="step-heading"><span class="step-number">Step 2</span><span class="step-title" role="heading" aria-level="3">Fix the format.</span><span class="step-intro">Give every result the same structure, so your team knows where to find things.</span><span class="step-cue">Read why and what you will do</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
-      <div class="step-body"><h4>Why this matters</h4><p>Even a good prompt can produce different headings, tables and layouts on different runs. A board paper or business report needs a familiar structure. Readers should be able to compare results without rebuilding the document each time.</p><h4>What you will do</h4><p>Turn your best result into an HTML template, a file that sets the page layout. Fix the headings, tables and places for evidence. Tell the AI to fill the template. Deliberately damage a saved version, then restore the earlier one.</p><h4>What you will have</h4><p>A reusable page template, plus the confidence to recover a version when a change goes wrong.</p></div>
+      <summary><span class="step-heading"><span class="step-number">Step 2</span><span class="step-title" role="heading" aria-level="3">Have the AI interview you and improve it.</span><span class="step-intro">Find the rules and requirements you did not know you needed to explain.</span><span class="step-cue">Read why and what you will do</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
+      <div class="step-body"><h4>Why this matters</h4><p>You know your business, but your first prompt will leave things unsaid. The AI needs to know what you would reject, which rules matter and what evidence must support the result. An interview helps make those requirements explicit.</p><h4>What you will do</h4><p>Review the AI's results from three real inputs. Let it interview you about the gaps, then rewrite the prompt with your answers. Add a checklist for what must be checked before delivery, run the examples again and save version two.</p><h4>What you will have</h4><p>An improved prompt with your business rules, evidence requirements and a delivery checklist.</p></div>
     </details></li>
 <li><details class="build-step" id="step-3">
-      <summary><span class="step-heading"><span class="step-number">Step 3</span><span class="step-title" role="heading" aria-level="3">Make the calculations reliable.</span><span class="step-intro">Let the AI explain the figures. Let a tested program calculate them.</span><span class="step-cue">Read why and what you will do</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
-      <div class="step-body"><h4>Why this matters</h4><p>A large language model (LLM) generates text from patterns learned during training. A convincing number in its answer does not prove a calculation was run. Models can solve maths and use calculators, but generated arithmetic can still be wrong. That is a problem in a board deck, a budget or a report someone must approve.</p><h4>What you will do</h4><p>Ask the AI to write a small Python program for sums, percentages, scores, dates and sorting. The program applies the same rules every run. For example, it calculates the percentage change before the AI writes the commentary. Check three results by hand and test missing values, zeroes and other difficult inputs. Code can contain mistakes too.</p><h4>What you will have</h4><p>Repeatable calculations with checks you can inspect. The AI uses those calculated figures in the report rather than inventing them as it writes.</p></div>
+      <summary><span class="step-heading"><span class="step-number">Step 3</span><span class="step-title" role="heading" aria-level="3">Create the template.</span><span class="step-intro">Give every result the same structure, so your team knows where to find things.</span><span class="step-cue">Read why and what you will do</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
+      <div class="step-body"><h4>Why this matters</h4><p>Even a good prompt can produce different headings, tables and layouts on different runs. A board paper or business report needs a familiar structure. Readers should be able to compare results without rebuilding the document each time.</p><h4>What you will do</h4><p>Turn your best result into an HTML template, a file that sets the page layout. Fix the headings, tables and places for evidence. Tell the AI to fill the template. Deliberately damage a saved version, then restore the earlier one.</p><h4>What you will have</h4><p>A reusable page template, plus the confidence to recover a version when a change goes wrong.</p></div>
     </details></li>
 <li><details class="build-step" id="step-4">
-      <summary><span class="step-heading"><span class="step-number">Step 4</span><span class="step-title" role="heading" aria-level="3">Test it and make it ready to share.</span><span class="step-intro">Prove that the tool works on difficult inputs and that someone else can run it.</span><span class="step-cue">Read why and what you will do</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
+      <summary><span class="step-heading"><span class="step-number">Step 4</span><span class="step-title" role="heading" aria-level="3">Add the Python program.</span><span class="step-intro">Let the AI explain the figures. Let a tested program calculate them.</span><span class="step-cue">Read why and what you will do</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
+      <div class="step-body"><h4>Why this matters</h4><p>A large language model (LLM) generates text from patterns learned during training. A convincing number in its answer does not prove a calculation was run. Models can solve maths and use calculators, but generated arithmetic can still be wrong. That is a problem in a board deck, a budget or a report someone must approve.</p><h4>What you will do</h4><p>Ask the AI to write a small Python program for sums, percentages, scores, dates and sorting. The program applies the same rules every run. For example, it calculates the percentage change before the AI writes the commentary. Check three results by hand and test missing values, zeroes and other difficult inputs. Code can contain mistakes too.</p><h4>What you will have</h4><p>Repeatable calculations with checks you can inspect. The AI uses those calculated figures in the report rather than inventing them as it writes.</p></div>
+    </details></li>
+<li><details class="build-step" id="step-5">
+      <summary><span class="step-heading"><span class="step-number">Step 5</span><span class="step-title" role="heading" aria-level="3">Test it and prepare it for handover.</span><span class="step-intro">Prove that the tool works on difficult inputs and that someone else can run it.</span><span class="step-cue">Read why and what you will do</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
       <div class="step-body"><h4>Why this matters</h4><p>One successful example is not enough. Your tool may fail on a missing field, a different date format or a document you have not tried. Your colleague also cannot use instructions that exist only in your head.</p><h4>What you will do</h4><p>Add a start-here file, sample inputs and tests with answers you know in advance. Ask a second AI to look for faults. Then hand the tool to a neighbour, give no help and note where they get stuck. Fix the problems, save the version and send a private copy to GitHub.</p><h4>What you will have</h4><p>A checked skill or plugin with instructions, examples and saved versions, ready for its first real job at work.</p></div>
     </details></li>
 </ol>
@@ -98,19 +103,19 @@
 <tr class="agenda-session"><th scope="row"><time>09:15</time></th><td>Set up your workspace in Zed and save your first version</td></tr>
 </tbody>
 <tbody aria-labelledby="agenda-part-3"><tr class="agenda-group"><td aria-hidden="true"></td><th id="agenda-part-3" scope="rowgroup">The build: your prompt becomes a tool your whole team can run</th></tr>
-<tr class="agenda-session"><th scope="row"><time>09:45</time></th><td>Step 1: Write the prompt for your tool. Run it twice. Watch it give two different answers</td></tr>
+<tr class="agenda-session"><th scope="row"><time>09:45</time></th><td>Step 1 of 5: Write the prompt for your tool. Run it twice. Watch it give two different answers</td></tr>
 <tr class="agenda-break"><th scope="row"><time>10:15</time></th><td><strong>Coffee. Your AI works through the break, testing your tool on three real cases</strong></td></tr>
-<tr class="agenda-session"><th scope="row"><time>10:30</time></th><td>Step 1 continued: Make the AI interview you, mark its own work and rebuild your prompt</td></tr>
+<tr class="agenda-session"><th scope="row"><time>10:30</time></th><td>Step 2 of 5: Make the AI interview you, mark its own work and rebuild your prompt</td></tr>
 <tr class="agenda-session"><th scope="row"><time>11:10</time></th><td>Demo: Queryable index on a large folder of data. Ask a question and find the source</td></tr>
-<tr class="agenda-session"><th scope="row"><time>11:35</time></th><td>Step 2: Create your tool’s template. One polished page, the same every time. Then wreck it on purpose and bring it back</td></tr>
+<tr class="agenda-session"><th scope="row"><time>11:35</time></th><td>Step 3 of 5: Create your tool’s template. One polished page, the same every time. Then wreck it on purpose and bring it back</td></tr>
 <tr class="agenda-break"><th scope="row"><time>12:25</time></th><td><strong>Lunch. Your AI works through the break, writing the program that does your sums</strong></td></tr>
 <tr class="agenda-session"><th scope="row"><time>12:45</time></th><td>Demo over lunch: AI agents that work while you sleep (Grok bot, Duet, Dot)</td></tr>
-<tr class="agenda-session"><th scope="row"><time>13:10</time></th><td>Step 3: Move calculations into Python and check the results</td></tr>
+<tr class="agenda-session"><th scope="row"><time>13:10</time></th><td>Step 4 of 5: Move calculations into Python and check the results</td></tr>
 <tr class="agenda-session"><th scope="row"><time>13:50</time></th><td>Demo: Why the AI cut you off mid-job, and three tricks that make your subscription go further</td></tr>
-<tr class="agenda-session"><th scope="row"><time>14:05</time></th><td>Step 4: Test and prepare to share. Ask a second AI to find faults in your tool</td></tr>
+<tr class="agenda-session"><th scope="row"><time>14:05</time></th><td>Step 5 of 5: Test and prepare to share. Ask a second AI to find faults in your tool</td></tr>
 <tr class="agenda-break"><th scope="row"><time>14:45</time></th><td><strong>Coffee. The rival AI works through the break, hunting for faults</strong></td></tr>
 <tr class="agenda-session"><th scope="row"><time>15:00</time></th><td>The neighbour test: hand your tool to someone who has never seen it. No help allowed</td></tr>
-<tr class="agenda-session"><th scope="row"><time>15:30</time></th><td>Show and tell: the best tools of the day on the big screen</td></tr>
+<tr class="agenda-session"><th scope="row"><time>15:30</time></th><td><strong>Show and share: everyone takes home every tool built by the group.</strong> See selected tools on the big screen and collect the full set in the shared course pack, with sample inputs and without company documents.</td></tr>
 </tbody>
 <tbody aria-labelledby="agenda-part-4"><tr class="agenda-group"><td aria-hidden="true"></td><th id="agenda-part-4" scope="rowgroup">From one tool to a company full of them</th></tr>
 <tr class="agenda-session"><th scope="row"><time>15:50</time></th><td>Your 100-day plan: the next five jobs that deserve a tool, and who will build them</td></tr>
@@ -123,7 +128,7 @@
       </details>
       <details class="course-section" id="tools">
         <summary><span class="section-heading"><span class="label">30 choices · One tool per delegate</span><span class="section-title" role="heading" aria-level="2">Choose the tool you will build.</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
-        <div class="section-body prose tool-list"><p>Each tool goes to one delegate only. Send us your first and second choice. Earlier bookings get first priority, and we will confirm your tool before the day.</p>
+        <div class="section-body prose tool-list"><p>Each tool is built by one delegate. Send us your first and second choice. Earlier bookings get first priority, and we will confirm your tool before the day. Everyone takes home every tool built by the group.</p>
 <h3>What every tool on this list has in common</h3>
 <ul>
 <li><strong>It brings a skill you may not have, or saves hours.</strong> Each one carries an expert's method inside it.</li>

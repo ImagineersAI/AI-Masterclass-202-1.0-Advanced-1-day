@@ -94,6 +94,7 @@ details[open] > summary .toggle-icon::after { transform: rotate(0); }
 .section-intro { font-size: 1.15rem; color: var(--ink-900); }
 .build-steps { list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); align-items: start; gap: 1rem; padding: 0; margin: 2rem 0 3rem; }
 .build-steps > li { border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); box-shadow: 0 8px 28px rgb(16 33 55 / 5%); }
+.build-steps > li:last-child:nth-child(odd) { grid-column: 1 / -1; }
 h3 { color: var(--ink-900); font-size: 1.2rem; line-height: 1.35; }
 .build-steps p { margin: 0; }
 .build-step > summary { align-items: flex-start; gap: 1rem; padding: 1.75rem; }
