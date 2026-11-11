@@ -90,6 +90,9 @@ details[open] > summary .toggle-icon::after { transform: rotate(0); }
 .step-body h4 { margin: 20px 0 8px; font-family: var(--mono); color: var(--ink-soft); font-size: 11px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; }
 .step-body h4:first-child { margin-top: 0; }
 .step-body p { margin: 0; color: var(--ink-soft); }
+.step-body p + p { margin-top: 12px; }
+.step-body ol { margin: 14px 0; padding-left: 22px; }
+.step-body li { margin-bottom: 10px; }
 .demo-content { padding: 24px; background: var(--band); border: 1px solid var(--rule); border-radius: var(--radius); }
 .demo-content h3 { margin: 0; font-size: 28px; }
 .demo-content > p:not(.label) { max-width: 80ch; color: var(--ink-soft); }
