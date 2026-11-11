@@ -1,4 +1,4 @@
-# Before the course: set up your laptop and check it
+# Before the course: set up Claude Cowork and check it
 
 ## Check that this course is right for you
 
@@ -19,201 +19,62 @@ Before booking, check that you can do the following independently:
 
 **If these tasks still need regular help, build that confidence before booking this advanced course.** Practise with someone who can help you, then return to this checklist. We can help with the course tools and setup; the day does not include teaching everyday computer use.
 
-## Complete the setup before the day
+## Complete the setup at least three days before
 
-Complete this guide at least three days before the course. Follow the Mac or Windows instructions, then complete the two shared steps below them. Allow extra time for downloads.
+**Claude Cowork is our working platform for the entire day. An active Claude Pro subscription is essential: US$20 per month when billed monthly, before applicable tax.** This is separate from the course fee. An existing higher Claude plan with Cowork access also meets the requirement.
 
-Zed is where you will work. You choose Claude Agent or Codex inside Zed, and Zed installs that agent for you. Python still needs a separate installation. Zed has Git controls, but your AI also needs the `git` command to save versions. The checks below confirm it is available.
+We chose Cowork for its ability to work with files, run programs and complete multi-step tasks. Using the same platform also means everyone can follow the same instructions and get help quickly.
 
-## 1. Get your accounts and material ready
+Use Claude Desktop on the laptop you will bring. You do not need a separate coding editor, a command-line AI agent or API credits. Cowork runs code in its own environment, so the course setup does not require installing Python or Git on your laptop.
 
-- **GitHub:** open [github.com/signup](https://github.com/signup), create a free account and verify your email. If you already have an account, sign in. Send us your GitHub username so we can give you the course pack.
-- **Your AI:** bring a paid Claude subscription with Claude Code access, or a paid ChatGPT subscription with Codex access. Open [Claude](https://claude.ai) or [ChatGPT](https://chatgpt.com), sign in and check your subscription in Settings. If you have both, you can use both. A paid Zed subscription is not required for these agents.
-- **Your tool:** send your first and second choice from [the tool list](#tools). Earlier bookings get first priority. Bring three real input examples and, if you have one, a good finished output. Remove confidential names and use material you are allowed to share.
+## 1. Activate your Claude subscription
 
-Have access to your sign-in email and any verification codes on the laptop you will bring. If your company controls software installation, ask its IT team to help before the day.
+1. Open [claude.ai](https://claude.ai). Sign in, or create an account and complete its email verification.
+2. Open your account's plan or billing settings. If needed, upgrade to **Claude Pro** using the monthly option.
+3. Check that the subscription is active on the account you will use in Claude Desktop. A free account does not meet the course requirement.
+4. Keep access to the email address and any verification method used for sign-in. If a company manages your account, confirm that Cowork and file access are enabled.
 
-If you need a new AI account, choose **Sign up** on Claude or ChatGPT and complete the email check. Then choose a paid plan that includes the agent you will use. Check access by signing in from Zed in step 3.
+## 2. Install Claude Desktop
 
-## 2. Set up your computer
-
-Follow only the section for your computer. If a program is already installed and its check works, keep it.
+Follow the section for your computer. You will need an internet connection throughout the course. If your company manages software installation, ask its IT team to help before the day.
 
 ### Mac
 
-#### Download and install Zed
-
-1. Open [zed.dev/download](https://zed.dev/download) and download the stable version for Mac.
-2. In Finder, open Downloads and double-click the downloaded `.dmg` file.
-3. Drag Zed into Applications. Open Applications, then double-click Zed. If macOS asks whether to open it, choose Open.
-4. Leave Zed open. You will connect your AI in step 3 below.
-
-#### Install Git, Python and the GitHub helper
-
-Press Command and Space, type `Terminal`, then press Return. This opens the window where you paste commands. Paste one command at a time and press Return.
-
-First check whether Homebrew, the installer we use for these programs, is already there:
-
-```
-brew --version
-```
-
-If it prints a version, skip the Homebrew installation below. If it says `command not found`, paste:
-
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-Follow its prompts. Your Mac may ask for its login password; nothing appears while you type it. At the end, follow the installer's **Next steps** commands. They make Homebrew available in Terminal and differ between Intel and Apple Silicon Macs. Then run `brew --version` again.
-
-Install Git to save versions, Python to run calculations, and the GitHub helper to connect your account:
-
-```
-brew install git python gh
-```
-
-If Homebrew says your macOS version is unsupported, send us that message before continuing.
-
-#### Create your course folder and add the Excel reader
-
-Use this folder in your home directory, outside OneDrive, iCloud and Dropbox:
-
-```
-mkdir -p ~/ai-masterclass
-cd ~/ai-masterclass
-```
-
-Create a separate Python environment for your course tools:
-
-```
-python3 -m venv .venv
-.venv/bin/python -m pip install openpyxl
-```
-
-`openpyxl` lets your tools read and write Excel files. This installs it for your course folder without changing the Mac's other Python programs.
-
-#### Check the installations
-
-Run each command separately. Git should report `git version`, Python should report `Python 3`, and the GitHub helper should report `gh version`, each followed by numbers.
-
-```
-git --version
-python3 --version
-```
-
-```
-gh --version
-.venv/bin/python -m pip show openpyxl
-```
-
-The last command should show `Name: openpyxl` and a version. If any command fails, send us the message. Then continue with step 3 below.
+1. Open [claude.com/download](https://claude.com/download) and choose the Mac desktop download. The desktop app requires macOS 13 or later.
+2. Find the downloaded installer in Finder → Downloads. Open it and follow its instructions. If shown an Applications folder, drag Claude into it.
+3. Open Claude from Applications, not from the installer. Sign in with the account holding your paid Claude subscription.
+4. Install any available app update. Keep the desktop app open for the folder check below.
 
 ### Windows
 
-#### Download and install Zed
+1. Open [claude.com/download](https://claude.com/download) and choose the Windows desktop download. The desktop app requires Windows 10 or later.
+2. Find the installer in File Explorer → Downloads. Open it and follow its instructions. Complete any administrator or system-component prompts before the course; ask IT if you cannot approve them.
+3. Open Claude from the Start menu, not by reopening the installer. Sign in with the account holding your paid Claude subscription.
+4. Install any available app update. Keep the desktop app open for the folder check below.
 
-1. Open [zed.dev/download](https://zed.dev/download) and download the stable Windows installer.
-2. Open Downloads in File Explorer and double-click the installer. Follow its prompts. If Windows asks for permission, check the installer is from Zed before accepting.
-3. Press the Windows key, type `Zed` and open it. Leave it open; you will connect your AI in step 3 below.
+## 3. Check Cowork with a real file task
 
-#### Install Git, Python and the GitHub helper
+1. In Finder or File Explorer, create an `ai-masterclass` folder inside your home or user folder. Keep it outside OneDrive, iCloud and Dropbox.
+2. Download [the course setup check file](../docs/assets/cowork-setup-check.csv) and save it in that folder as `cowork-setup-check.csv`.
+3. In Claude Desktop, start a new task. If the message box offers **Chat** and **Cowork**, select **Cowork**. If those options are absent, use the message box directly; newer app versions combine them.
+4. Use the task's folder or context control to connect `ai-masterclass`. Approve access to that folder when asked. Keep Claude Desktop open and connected.
+5. Paste the request below and let Claude complete the task. Review any requested permissions before approving them.
 
-Press the Windows key, type `PowerShell`, then press Enter. Paste one command at a time and press Enter. These commands use Windows' installer, called WinGet. Accept its installation prompts.
+> Read cowork-setup-check.csv in the folder I connected. Write and run a Python program that multiplies Quantity by UnitPrice for each row, then adds the line totals. Save the program as setup-check.py and the total as setup-result.txt in the same folder. Tell me the total and which files you saved. Do not change the input file.
 
-```
-winget install -e --id Git.Git
-winget install -e --id GitHub.cli
-```
+The correct total is **180**. In Finder or File Explorer, check that `setup-check.py` and `setup-result.txt` have appeared in `ai-masterclass`. Open the result file and check the total. The script and output must be saved to your folder, not left only in the conversation.
 
-Install Python 3.13, the version used for this setup guide:
+This checks paid access, folder access, code execution and saving the result. If Cowork cannot do any part, send us its message before the day. You do not need to install Python yourself to fix a Cowork problem.
 
-```
-winget install -e --id Python.Python.3.13
-```
+## 4. Prepare your course pack access and material
 
-If `winget` is not recognised, open Microsoft Store, find **App Installer** by Microsoft Corporation, and install or update it. Close PowerShell, open it again, then retry.
-
-When the installations finish, close PowerShell and open a fresh window so it can find the new programs.
-
-#### Create your course folder and add the Excel reader
-
-Create the folder in your user directory, outside OneDrive, iCloud and Dropbox:
-
-```
-New-Item -ItemType Directory -Force "$HOME\ai-masterclass"
-Set-Location "$HOME\ai-masterclass"
-```
-
-Create a separate Python environment for your course tools and install the Excel reader:
-
-```
-py -3.13 -m venv .venv
-.\.venv\Scripts\python.exe -m pip install openpyxl
-```
-
-You do not need to change PowerShell's script permissions. The command runs Python directly.
-
-#### Check the installations
-
-Run each command separately. Git should report `git version`, Python should report `Python 3.13`, and the GitHub helper should report `gh version`, each followed by numbers.
-
-```
-git --version
-py -3.13 --version
-```
-
-```
-gh --version
-.\.venv\Scripts\python.exe -m pip show openpyxl
-```
-
-The last command should show `Name: openpyxl` and a version. If any command fails, send us the message. Then continue with step 3 below.
-
-## 3. Connect your AI inside Zed
-
-1. Close Zed and open it again so it can find the programs you just installed.
-2. Choose **File → Open Folder**, then open `ai-masterclass` inside your home or user folder.
-3. Open Zed's command search: Command, Shift and P on Mac, or Control, Shift and P on Windows. Type `zed: acp registry` and select it.
-4. Install **Claude Agent** for your Claude subscription, or **Codex** for your ChatGPT subscription. Zed downloads the selected agent. If you have both subscriptions, you may install both.
-5. Open the Agent Panel using the agent icon in Zed's status bar. Use its new-thread menu to choose the agent you installed.
-6. For **Claude Agent**, type `/login` in that thread and choose the Claude Code sign-in option. For **Codex**, choose **Sign in with ChatGPT** when prompted. Complete the sign-in in your browser, then return to Zed.
-7. Type `Say hello` and send it. Check that your chosen agent answers.
-
-Use the subscription sign-in route. You do not need to buy separate API credits for this course setup. If your company account blocks the sign-in, ask its administrator to enable access before the day.
-
-## 4. Connect GitHub and do the final check
-
-In the Terminal or PowerShell window you used earlier, tell Git your name and GitHub email. Replace the examples inside the quotes with your own details:
-
-```
-git config --global user.name "Your Name"
-git config --global user.email "you@example.com"
-```
-
-Connect the GitHub helper:
-
-```
-gh auth login --web --git-protocol https
-```
-
-If asked whether to authenticate Git, choose yes. Follow the sign-in instructions. You may see a short code and a browser page where you enter it.
-
-Check the connection:
-
-```
-gh auth status
-```
-
-You should see a message confirming that you are logged in to github.com as your username.
-
-Finally, paste this request into your Claude Agent or Codex thread in Zed:
-
-> Check this laptop for the course. Report the Git and Python versions, whether gh is signed in to GitHub, and whether openpyxl is installed in this folder's .venv. Do not install or change anything. Tell me what passed and what needs fixing.
-
-You are ready when the agent answers and all four checks pass. Send us your GitHub username if you have not already done so.
+- Create a free account at [github.com/signup](https://github.com/signup), or sign in to your existing account. Verify your email and send us your GitHub username so we can give you access to the private course pack. No Git command-line setup is required.
+- Send your first and second choice from [the tool list](#tools). Earlier bookings get first priority. We will confirm your tool before the day.
+- Bring three real input examples and, if you have one, a good finished output. Use material you are allowed to process with Claude, and remove confidential names.
+- Bring your laptop, charger, active Claude subscription and a completed folder check. The day's work, including reviews and batch tests, takes place in Cowork.
 
 ## If a check fails
 
 Send us a screenshot of the failed step and its message, without passwords or sign-in codes. We will help you before the day. Doors open at 08:00 for any remaining laptop problems.
 
-Setup references: [Zed installation](https://zed.dev/docs/installation), [agents in Zed](https://zed.dev/docs/ai/external-agents), [Python in Zed](https://zed.dev/docs/languages/python), [GitHub helper installation](https://github.com/cli/cli#installation).
+References: [Claude Pro pricing and Cowork access](https://claude.com/product/cowork), [desktop installation](https://support.claude.com/en/articles/10065433-install-claude-desktop), [Cowork setup](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork), [the updated Claude interface](https://support.claude.com/en/articles/16761823-claude-cowork-and-chat-are-one-claude).

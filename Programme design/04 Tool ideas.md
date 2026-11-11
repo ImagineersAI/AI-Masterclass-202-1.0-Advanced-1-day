@@ -1,6 +1,6 @@
 # Thirty tools: pick the one you will build
 
-Each tool is built by one delegate. Send us your first and second choice. Earlier bookings get first priority, and we will confirm your tool before the day. Everyone takes home every tool built by the group.
+You build your chosen tool in Claude Cowork. Each tool is built by one delegate. Send us your first and second choice. Earlier bookings get first priority, and we will confirm your tool before the day. Everyone takes home every tool built by the group.
 
 ## What every tool on this list has in common
 

@@ -1,5 +1,7 @@
 # Thirty tools: facilitator crib notes
 
+All five steps take place in Claude Cowork, including Python execution, batch tests and a separate review task. Delegates need Claude Desktop and at least an active Claude Pro subscription (US$20/month billed monthly, before applicable tax).
+
 These notes tell you what to push each delegate towards at each of the five steps. They follow the same order and numbers as `04 Tool ideas.md`.
 
 ## The five steps, and the push that works for any tool
