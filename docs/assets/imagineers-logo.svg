@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Imagineers.ai">
+  <!-- Imagineers.ai triangular G, redrawn in the site palette (ink #161b21, teal #0e6b62, green #2e7a55). -->
+  <defs>
+    <linearGradient id="g" x1="14" y1="82" x2="86" y2="14" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2e7a55"/>
+      <stop offset="1" stop-color="#0e6b62"/>
+    </linearGradient>
+  </defs>
+  <path d="M61.6 36 L50 14 L14 82 L86 82 L74.9 61 L56 61" fill="none" stroke="#161b21" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M50 14 L14 82 L86 82" fill="none" stroke="url(#g)" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>
