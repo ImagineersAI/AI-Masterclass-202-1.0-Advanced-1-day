@@ -1,5 +1,26 @@
 # Before the course: set up your laptop and check it
 
+## Check that this course is right for you
+
+You do not need coding experience. You do need to use your own laptop confidently and complete everyday computer tasks without step-by-step help. The day moves quickly and assumes these skills.
+
+Before booking, check that you can do the following independently:
+
+- Select text, copy, cut and paste using **Ctrl+C, Ctrl+X and Ctrl+V** on Windows, or **Command+C, Command+X and Command+V** on Mac.
+- Switch between open apps and browser tabs, then return to the task you were working on.
+- Open an installed app from the Start menu or Applications folder. Recognise the difference between the app and its downloaded installer.
+- Use File Explorer on Windows or Finder on Mac to find Downloads and navigate to a working folder.
+- Download a file, save it in a chosen folder and find it again, rather than relying on the browser's preview.
+- Create and rename folders, move or copy files between them, and recognise which copy of a file you are opening.
+- Extract a ZIP file and work with the files in the extracted folder.
+- Upload or attach the correct file by choosing it from a folder.
+- Sign in to the correct online account and complete an email or phone verification when asked.
+- Follow numbered written instructions, recognise when a task has finished or shown an error, and take a screenshot to ask for help.
+
+**If these tasks still need regular help, build that confidence before booking this advanced course.** Practise with someone who can help you, then return to this checklist. We can help with the course tools and setup; the day does not include teaching everyday computer use.
+
+## Complete the setup before the day
+
 Complete this guide at least three days before the course. Follow the Mac or Windows instructions, then complete the two shared steps below them. Allow extra time for downloads.
 
 Zed is where you will work. You choose Claude Agent or Codex inside Zed, and Zed installs that agent for you. Python still needs a separate installation. Zed has Git controls, but your AI also needs the `git` command to save versions. The checks below confirm it is available.

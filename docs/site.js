@@ -12,7 +12,7 @@ document.addEventListener('click', event => {
   if (link && link.hash === location.hash) openLinkedSection();
 });
 window.addEventListener('pageshow', () => {
-  document.getElementById('agenda').open = false;
+  for (const id of ['agenda', 'prepare']) document.getElementById(id).open = false;
   if (location.hash) openLinkedSection();
 });
 

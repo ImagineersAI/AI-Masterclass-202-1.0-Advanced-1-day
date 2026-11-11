@@ -83,7 +83,7 @@ Two rules protect delegates. Every GitHub copy is private. Company documents sit
 | 11:35 | Round 3: the template | Includes the wreck-and-restore moment. The second long job starts before lunch. |
 | 12:25 | Lunch | From 12:45, a demonstration of the always-on agents: Grok bot, Duet and Dot. |
 | 13:10 | Round 4: the program | |
-| 13:50 | Why you got cut off | Token costs in 15 minutes: cache expiry, change effort and not model, the 5-hour window. Delegates keep a one-page card. |
+| 13:50 | Make your AI subscription go further | Key-value (KV) cache in 15 minutes: reuse stable context, recognise cache expiry and reduce repeated processing where supported. Explain token spend and usage limits. Delegates keep a one-page card. |
 | 14:05 | Round 5: safe to hand over | The third long job starts before coffee. |
 | 14:45 | Coffee | |
 | 15:00 | The neighbour test | Swap, run, fix, save version 5, send to GitHub. |
