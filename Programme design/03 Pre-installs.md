@@ -36,7 +36,7 @@ The subscription is separate from the course fee. An existing higher Claude plan
 
 ## Prepare your course pack access and material
 
-- We will email you a link to the course pack folder before the day. You do not need an account or sign-up to download it.
+- We will email you a link to the course Dropbox folder before the day. You use it in your browser to download the course pack and upload your finished tool. You do not need a Dropbox account.
 
 - Send your first and second choice from [the tool list](../docs/index.html#tools). Earlier bookings get first priority. We will confirm your tool before the day.
 

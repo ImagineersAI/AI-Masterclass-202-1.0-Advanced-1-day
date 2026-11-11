@@ -10,7 +10,7 @@ These notes tell you what to push each delegate towards at each of the five step
 2. **Interview.** The AI interviews the delegate and adds the advanced functions. If the interview stays shallow, ask: "What would make you reject this output if a junior handed it to you?"
 3. **Template.** The AI builds one HTML page to enter the input and one to view the result. If the page drifts, ask: "What must be in the same place every time?"
 4. **Program.** The AI writes Python for everything that must be exactly right. Make the delegate work out three figures by hand and compare them with the program.
-5. **Tests and handover.** Generate ordinary, difficult and broken inputs, with expected answers checked independently. Run them in batches and rerun after fixes. Start a separate Cowork review task. Add start-here instructions and sample inputs, let a neighbour run it without help, then upload the finished version to the shared course folder.
+5. **Tests and handover.** Generate ordinary, difficult and broken inputs, with expected answers checked independently. Run them in batches and rerun after fixes. Start a separate Cowork review task. Add start-here instructions and sample inputs, let a neighbour run it without help, then upload the finished version to the course Dropbox folder.
 
 Under every tool below, the five numbered items match these five steps. The tests listed are starting examples for the full batch.
 
