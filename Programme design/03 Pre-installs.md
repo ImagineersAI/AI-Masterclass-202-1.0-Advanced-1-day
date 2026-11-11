@@ -1,166 +1,198 @@
-# Before the course: what to set up and bring
+# Before the course: set up your laptop and check it
 
-Please do three things before the day: choose your tool, set up your laptop, and send us your GitHub username. The setup takes about 30 minutes, and the course cannot start for you without it.
+Complete this guide at least three days before the course. Follow the Mac or Windows instructions, then complete the two shared steps below them. Allow extra time for downloads.
 
-Do this at least three days before the course, so there is time to fix anything that fails.
+Zed is where you will work. You choose Claude Agent or Codex inside Zed, and Zed installs that agent for you. Python still needs a separate installation. Zed has Git controls, but your AI also needs the `git` command to save versions. The checks below confirm it is available.
 
-## Choose your tool and bring your material
+## 1. Get your accounts and material ready
 
-You will spend the day building one tool. Each tool in `04 Tool ideas.md` goes to one delegate only, so send us your first, second and third choice. We will confirm which one is yours.
+- **GitHub:** open [github.com/signup](https://github.com/signup), create a free account and verify your email. If you already have an account, sign in. Send us your GitHub username so we can give you the course pack.
+- **Your AI:** bring a paid Claude subscription with Claude Code access, or a paid ChatGPT subscription with Codex access. Open [Claude](https://claude.ai) or [ChatGPT](https://chatgpt.com), sign in and check your subscription in Settings. If you have both, you can use both. A paid Zed subscription is not required for these agents.
+- **Your tool:** send your first and second choice from [the tool list](#tools). Earlier bookings get first priority. Bring three real input examples and, if you have one, a good finished output. Remove confidential names and use material you are allowed to share.
 
-Bring three real examples of what goes into your tool, such as three CVs, three quotes or three months of accounts. If you have a finished output that you were pleased with, bring that too.
+Have access to your sign-in email and any verification codes on the laptop you will bring. If your company controls software installation, ask its IT team to help before the day.
 
-## Set up your laptop
+If you need a new AI account, choose **Sign up** on Claude or ChatGPT and complete the email check. Then choose a paid plan that includes the agent you will use. Check access by signing in from Zed in step 3.
 
-| What | Why you need it |
-|---|---|
-| Zed | The workspace where you will build your tool |
-| Git | Saves every version of your work, so you can always go back |
-| Python | Runs the small programs inside the tools |
-| A GitHub account | Keeps a private copy of your work off your laptop |
-| Claude or ChatGPT inside Zed | The AI you will work with, using your existing subscription. Zed fetches it for you, so there is nothing extra to install. |
+## 2. Set up your computer
 
-Keep your work folder out of OneDrive, iCloud and Dropbox. On the day we will create it in your home folder.
+Follow only the section for your computer. If a program is already installed and its check works, keep it.
 
-## Accounts you need
+### Mac
 
-Set these up first, and bring the usernames and passwords with you. Check that you can sign in to each website on the laptop you will bring.
+#### Download and install Zed
 
-| Account | Website | What to do |
-|---|---|---|
-| GitHub | [github.com/signup](https://github.com/signup) | Create a free account. Note the email address you use, because Git needs the same one below. |
-| Claude | [claude.ai](https://claude.ai) | Sign in with your existing subscription. |
-| ChatGPT | [chatgpt.com](https://chatgpt.com) | Sign in with your existing subscription. |
+1. Open [zed.dev/download](https://zed.dev/download) and download the stable version for Mac.
+2. In Finder, open Downloads and double-click the downloaded `.dmg` file.
+3. Drag Zed into Applications. Open Applications, then double-click Zed. If macOS asks whether to open it, choose Open.
+4. Leave Zed open. You will connect your AI in step 3 below.
 
-You need GitHub, plus Claude or ChatGPT. If you have both Claude and ChatGPT, bring both.
+#### Install Git, Python and the GitHub helper
 
-Once you have a GitHub account, send us your GitHub username. We use it to give you access to the course pack.
+Press Command and Space, type `Terminal`, then press Return. This opens the window where you paste commands. Paste one command at a time and press Return.
 
-## Mac
+First check whether Homebrew, the installer we use for these programs, is already there:
 
-### 1. Open Terminal
+```
+brew --version
+```
 
-Press Command and Space, type `Terminal`, and press Return. Paste each command below into that window and press Return.
-
-### 2. Install Homebrew (the installer that fetches the rest)
-
-Your Mac will ask for your password. Nothing shows as you type it, which is normal.
+If it prints a version, skip the Homebrew installation below. If it says `command not found`, paste:
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-When it finishes, paste these two lines so that your Mac can find Homebrew:
+Follow its prompts. Your Mac may ask for its login password; nothing appears while you type it. At the end, follow the installer's **Next steps** commands. They make Homebrew available in Terminal and differ between Intel and Apple Silicon Macs. Then run `brew --version` again.
 
-```
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
-```
-
-### 3. Install Zed, Git and Python
+Install Git to save versions, Python to run calculations, and the GitHub helper to connect your account:
 
 ```
 brew install git python gh
-brew install --cask zed
 ```
 
-### 4. Add the Excel add-on to Python
+If Homebrew says your macOS version is unsupported, send us that message before continuing.
+
+#### Create your course folder and add the Excel reader
+
+Use this folder in your home directory, outside OneDrive, iCloud and Dropbox:
 
 ```
-python3 -m pip install --user --break-system-packages openpyxl
+mkdir -p ~/ai-masterclass
+cd ~/ai-masterclass
 ```
 
-The long word in the middle only allows the add-on for your own user account.
-
-### 5. Tell Git who you are
-
-Put your own name between the first quote marks, and your GitHub email address between the second.
+Create a separate Python environment for your course tools:
 
 ```
-git config --global user.name "Your Name"
-git config --global user.email "you@example.com"
+python3 -m venv .venv
+.venv/bin/python -m pip install openpyxl
 ```
 
-### 6. Connect Git to your GitHub account
+`openpyxl` lets your tools read and write Excel files. This installs it for your course folder without changing the Mac's other Python programs.
+
+#### Check the installations
+
+Run each command separately. Git should report `git version`, Python should report `Python 3`, and the GitHub helper should report `gh version`, each followed by numbers.
 
 ```
-gh auth login --web --git-protocol https
+git --version
+python3 --version
 ```
 
-If it asks whether to authenticate Git, press Return for yes. It then shows a short code and opens your browser. Sign in to GitHub and type the code.
-
-### 7. Check that everything works
-
 ```
-python3 --version && git --version && gh auth status
-python3 -c "import openpyxl; print('Python add-ons work')"
+gh --version
+.venv/bin/python -m pip show openpyxl
 ```
 
-You should see two version numbers, a line saying you are logged in to github.com, then the words `Python add-ons work`.
+The last command should show `Name: openpyxl` and a version. If any command fails, send us the message. Then continue with step 3 below.
 
-## Windows
+### Windows
 
-### 1. Open PowerShell
+#### Download and install Zed
 
-Press the Windows key, type `PowerShell`, and press Enter. Paste each command below into that window and press Enter. If Windows asks whether you agree to the terms, type `Y` and press Enter.
+1. Open [zed.dev/download](https://zed.dev/download) and download the stable Windows installer.
+2. Open Downloads in File Explorer and double-click the installer. Follow its prompts. If Windows asks for permission, check the installer is from Zed before accepting.
+3. Press the Windows key, type `Zed` and open it. Leave it open; you will connect your AI in step 3 below.
 
-### 2. Install Zed, Git and Python
+#### Install Git, Python and the GitHub helper
+
+Press the Windows key, type `PowerShell`, then press Enter. Paste one command at a time and press Enter. These commands use Windows' installer, called WinGet. Accept its installation prompts.
 
 ```
-winget install -e --id ZedIndustries.Zed
 winget install -e --id Git.Git
 winget install -e --id GitHub.cli
-winget install -e --id Python.Python.3.12
 ```
 
-Now close PowerShell and open it again. Windows only finds the new programs in a fresh window.
-
-### 3. Add the Excel add-on to Python
+Install Python 3.13, the version used for this setup guide:
 
 ```
-python -m pip install openpyxl
+winget install -e --id Python.Python.3.13
 ```
 
-### 4. Tell Git who you are
+If `winget` is not recognised, open Microsoft Store, find **App Installer** by Microsoft Corporation, and install or update it. Close PowerShell, open it again, then retry.
 
-Put your own name between the first quote marks, and your GitHub email address between the second.
+When the installations finish, close PowerShell and open a fresh window so it can find the new programs.
+
+#### Create your course folder and add the Excel reader
+
+Create the folder in your user directory, outside OneDrive, iCloud and Dropbox:
+
+```
+New-Item -ItemType Directory -Force "$HOME\ai-masterclass"
+Set-Location "$HOME\ai-masterclass"
+```
+
+Create a separate Python environment for your course tools and install the Excel reader:
+
+```
+py -3.13 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install openpyxl
+```
+
+You do not need to change PowerShell's script permissions. The command runs Python directly.
+
+#### Check the installations
+
+Run each command separately. Git should report `git version`, Python should report `Python 3.13`, and the GitHub helper should report `gh version`, each followed by numbers.
+
+```
+git --version
+py -3.13 --version
+```
+
+```
+gh --version
+.\.venv\Scripts\python.exe -m pip show openpyxl
+```
+
+The last command should show `Name: openpyxl` and a version. If any command fails, send us the message. Then continue with step 3 below.
+
+## 3. Connect your AI inside Zed
+
+1. Close Zed and open it again so it can find the programs you just installed.
+2. Choose **File → Open Folder**, then open `ai-masterclass` inside your home or user folder.
+3. Open Zed's command search: Command, Shift and P on Mac, or Control, Shift and P on Windows. Type `zed: acp registry` and select it.
+4. Install **Claude Agent** for your Claude subscription, or **Codex** for your ChatGPT subscription. Zed downloads the selected agent. If you have both subscriptions, you may install both.
+5. Open the Agent Panel using the agent icon in Zed's status bar. Use its new-thread menu to choose the agent you installed.
+6. For **Claude Agent**, type `/login` in that thread and choose the Claude Code sign-in option. For **Codex**, choose **Sign in with ChatGPT** when prompted. Complete the sign-in in your browser, then return to Zed.
+7. Type `Say hello` and send it. Check that your chosen agent answers.
+
+Use the subscription sign-in route. You do not need to buy separate API credits for this course setup. If your company account blocks the sign-in, ask its administrator to enable access before the day.
+
+## 4. Connect GitHub and do the final check
+
+In the Terminal or PowerShell window you used earlier, tell Git your name and GitHub email. Replace the examples inside the quotes with your own details:
 
 ```
 git config --global user.name "Your Name"
 git config --global user.email "you@example.com"
 ```
 
-### 5. Connect Git to your GitHub account
+Connect the GitHub helper:
 
 ```
 gh auth login --web --git-protocol https
 ```
 
-If it asks whether to authenticate Git, press Enter for yes. It then shows a short code and opens your browser. Sign in to GitHub and type the code.
+If asked whether to authenticate Git, choose yes. Follow the sign-in instructions. You may see a short code and a browser page where you enter it.
 
-### 6. Check that everything works
+Check the connection:
 
 ```
-python --version; git --version; gh auth status
-python -c "import openpyxl; print('Python add-ons work')"
+gh auth status
 ```
 
-You should see two version numbers, a line saying you are logged in to github.com, then the words `Python add-ons work`.
+You should see a message confirming that you are logged in to github.com as your username.
 
-## Mac and Windows: add your AI to Zed
+Finally, paste this request into your Claude Agent or Codex thread in Zed:
 
-1. Open Zed.
-2. Press Command, Shift and P on a Mac, or Control, Shift and P on Windows. A search box opens at the top.
-3. Type `acp registry` and press Return. A list of AI agents opens.
-4. Install **Claude Agent** if you have a Claude subscription, and **Codex** if you have a ChatGPT subscription. If you have both, install both.
-5. Open the Agent Panel and start a new thread with the agent you installed.
-6. Sign in with your subscription:
-   - **Claude Agent:** type `/login`, press Return, and choose to log in with Claude Code. Your browser opens so that you can sign in to Claude.
-   - **Codex:** follow the sign-in prompt and choose to sign in with ChatGPT.
-7. Type `Say hello` and check that it answers.
+> Check this laptop for the course. Report the Git and Python versions, whether gh is signed in to GitHub, and whether openpyxl is installed in this folder's .venv. Do not install or change anything. Tell me what passed and what needs fixing.
 
-## If something fails
+You are ready when the agent answers and all four checks pass. Send us your GitHub username if you have not already done so.
 
-Take a photo of the screen showing the message, and send it to us with the step number. We will sort it out with you before the day.
+## If a check fails
 
-Doors open at 08:00 on the day for anyone who still has a step that does not work.
+Send us a screenshot of the failed step and its message, without passwords or sign-in codes. We will help you before the day. Doors open at 08:00 for any remaining laptop problems.
+
+Setup references: [Zed installation](https://zed.dev/docs/installation), [agents in Zed](https://zed.dev/docs/ai/external-agents), [Python in Zed](https://zed.dev/docs/languages/python), [GitHub helper installation](https://github.com/cli/cli#installation).

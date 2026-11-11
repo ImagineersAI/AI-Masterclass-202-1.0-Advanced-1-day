@@ -119,7 +119,7 @@ Delegates answer three questions for their own company. Which five recurring job
 ## Before the day
 
 - **Setup.** Zed, Git, a GitHub account and Python. Zed fetches Claude and Codex itself, so delegates install no separate AI programs. The steps and the check for delegates are in `03 Pre-installs.md`.
-- **A chosen tool.** Each delegate sends three choices from `04 Tool ideas.md`, and you confirm one tool per delegate so that no two are the same.
+- **A chosen tool.** Each delegate sends two choices from `04 Tool ideas.md`, and you confirm one tool per delegate so that no two are the same.
 - **Material.** Three real examples of the input for their chosen tool, and one example of a good finished output if they have one.
 - **GitHub usernames.** Delegates send theirs ahead, so that you can give them access to the private pack.
 - **A fallback.** Sample material for each worked example, for delegates who cannot bring company documents.

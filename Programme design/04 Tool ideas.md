@@ -1,6 +1,6 @@
 # Thirty tools: pick the one you will build
 
-Each tool below goes to one delegate only. Send us your first, second and third choice, and we will confirm which one is yours.
+Each tool goes to one delegate only. Send us your first and second choice. Earlier bookings get first priority, and we will confirm your tool before the day.
 
 ## What every tool on this list has in common
 
