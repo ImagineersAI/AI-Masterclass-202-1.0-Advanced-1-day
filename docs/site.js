@@ -11,7 +11,10 @@ document.addEventListener('click', event => {
   const link = event.target.closest('a[href^="#"]');
   if (link && link.hash === location.hash) openLinkedSection();
 });
-if (location.hash) openLinkedSection();
+window.addEventListener('pageshow', () => {
+  document.getElementById('agenda').open = false;
+  if (location.hash) openLinkedSection();
+});
 
 let sectionsBeforePrint = [];
 window.addEventListener('beforeprint', () => {
