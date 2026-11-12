@@ -18,9 +18,13 @@ window.addEventListener('pageshow', () => {
 
 let sectionsBeforePrint = [];
 window.addEventListener('beforeprint', () => {
-  sectionsBeforePrint = [...document.querySelectorAll('details')].map(section => [section, section.open]);
+  sectionsBeforePrint = [...document.querySelectorAll('details')].map(section => [section, section.open, section.getAttribute('name')]);
+  sectionsBeforePrint.forEach(([section]) => { section.removeAttribute('name'); });
   sectionsBeforePrint.forEach(([section]) => { section.open = true; });
 });
 window.addEventListener('afterprint', () => {
   sectionsBeforePrint.forEach(([section, wasOpen]) => { section.open = wasOpen; });
+  sectionsBeforePrint.forEach(([section, , name]) => {
+    if (name !== null) section.setAttribute('name', name);
+  });
 });

@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&amp;family=Archivo+Narrow:wght@600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=5">
-  <script src="site.js?v=3" defer></script>
+  <script src="site.js?v=4" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -21,7 +21,7 @@
         <img src="assets/imagineers-logo.svg" alt="" width="32" height="32"><span>IMAGINEERS.AI</span>
       </a>
       <nav class="page-nav" aria-label="Course sections">
-        <a href="#agenda">Agenda</a><a href="#tools">Tool choices</a><a href="#prepare">Before the day</a><a class="nav-book" href="#pricing">Pricing &amp; booking</a>
+        <a href="#demos">Demos &amp; tool pack</a><a href="#agenda">Agenda</a><a href="#tools">Tool choices</a><a href="#prepare">Before the day</a><a class="nav-book" href="#pricing">Pricing &amp; booking</a>
       </nav>
     </div>
   </header>
@@ -31,7 +31,9 @@
         <div>
           <p class="label">AI Masterclass 202 · Advanced · One day</p>
           <h1 id="course-title">Build a business tool.<br><span>Take it to work.</span></h1>
-          <p class="intro">Learn the advanced way to work with AI in Claude Cowork. Direct Claude to work with your files, run calculations and build a repeatable business skill or plugin for a real job.</p>
+          <p class="intro">You’ll use the skills from the first masterclass to build and test a reusable tool for a job you already do.</p>
+          <p>Your tool is a folder of instructions, prompts, templates and a small program, saved as a skill or plugin.</p>
+          <p><strong>Johannesburg · Choose 3 December or 4 December 2026.</strong> Attend one day only, from 08:30 to 18:00. Doors open at 08:00.</p>
           <p class="audience">For alumni of the Imagineers.ai beginner masterclass. <strong>Claude Pro is essential: US$20/month, billed monthly, before tax.</strong></p>
           <div class="hero-actions"><a class="button primary" href="#tools">Choose your tool</a><a class="button secondary" href="#pricing">View pricing &amp; book</a></div>
         </div>
@@ -40,7 +42,7 @@
           <h2 id="takeaway-title">Your own working tool.</h2>
           <ul class="takeaway-list">
             <li>Confidence using Claude Cowork to work with files, run tests and save versions.</li>
-            <li>A finished skill or plugin for a recurring job you choose.</li>
+            <li>A finished tool for a recurring job you choose.</li>
             <li>A repeatable format, a program for the calculations, and checks before delivery.</li>
             <li>Saved versions on your laptop and a copy in the course Dropbox folder.</li>
             <li>A copy of every tool built by the other delegates, with sample inputs.</li>
@@ -50,136 +52,82 @@
       </div>
     </section>
     <div class="container course-content">
-      <details class="course-section" id="design" open>
-        <summary><span class="section-heading"><span class="label">How the day works</span><span class="section-title" role="heading" aria-level="2">One business tool, built in five steps.</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
+      <section class="course-section" id="design" aria-labelledby="design-title">
+        <div class="section-heading overview-heading"><span class="label">How the day works</span><h2 class="section-title" id="design-title">One business tool, built in five steps.</h2></div>
         <div class="section-body">
-          <p class="section-intro">You spend the day developing a complete business skill or plugin. Choose from 30 tools before the course, then build yours around three real examples from your work.</p>
-          <p>The skill or plugin is a folder of instructions, prompts, templates and a small program. You build and run it in Claude Cowork. Each step ends with a saved version you can return to.</p>
-          <div class="demo-content">
-            <p class="label">A core skill you will learn</p>
-            <h3>Work with Claude Cowork throughout the day.</h3>
-            <p>We use Claude Cowork because it is well suited to building and running business tools. It works with your files, runs programs and handles multi-step tasks from a plain-English brief. You do not need to arrive knowing how to code.</p>
-            <p>Everyone uses the same platform so demonstrations, instructions and support are consistent. That keeps the day moving and gives you more time to build.</p>
-            <ul>
-              <li><strong>Work directly with your files.</strong> Have Cowork read source material and save prompts, templates and programs in your connected folder.</li>
-              <li><strong>Run and check the work.</strong> Ask Cowork to run your program in its code environment, inspect the results and fix failures.</li>
-              <li><strong>Keep improving safely.</strong> Review the results, save a numbered copy at each stage and restore an earlier copy when you need to.</li>
-            </ul>
-            <p>You practise this throughout all five steps, from the first prompt to the final batch tests and review. You leave knowing how to use Cowork to develop your next tool too.</p>
-          </div>
+          <p class="section-intro">You spend the day developing a complete business tool. Choose from 30 tools before the course, then build yours around three real examples from your work.</p>
+          <p>Use Claude Cowork to work with your files, run programs and save a version you can return to at each step.</p>
           <ol class="build-steps">
-<li><details class="build-step" id="step-1">
-      <summary><span class="step-heading"><span class="step-number">Step 1</span><span class="step-title" role="heading" aria-level="3">Write the prompt.</span><span class="step-intro">Use the expert's method you learned on the first masterclass.</span><span class="step-cue">Read why and what you will do</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
+<li><details class="build-step" id="step-1" name="build-steps">
+      <summary><span class="step-heading"><span class="step-number">Step 1</span><span class="step-title" role="heading" aria-level="3">Write the prompt.</span><span class="step-intro">Use the expert's method you learned on the first masterclass.</span><span class="step-cue">Read why and what you will have</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
       <div class="step-body">
         <h4>Why this matters</h4>
-        <p>On the first masterclass, you learned to give the AI an expert's method, rather than only asking for an answer. Here you turn that method into instructions inside a reusable tool. You are building on a skill you already know.</p>
-        <p>A useful business tool needs more than a request for a good answer. It needs the steps an experienced person would follow. If you ask for a recommendation before checking the facts, the AI may produce a convincing answer with no sound basis.</p>
-        <p>The method changes with the job. A comparison needs the same facts from each supplier. A shortlist needs must-have requirements checked before scoring. A procedure needs its steps put in order before anyone writes the checklist.</p>
+        <p>Your first masterclass taught you to give the AI an expert’s method. Here you turn that method into reusable instructions for a real job. The prompt must check the facts and apply your criteria before it recommends an answer.</p>
         <h4>What you will do</h4>
-        <ol>
-          <li>Define what goes in, who will use the result and what decision or task it must support.</li>
-          <li>Write the method as a sequence: read the material, extract the relevant facts, apply the criteria, then produce the result.</li>
-          <li>State what must be supported by evidence. Require a page, clause or quoted passage where appropriate. Tell the AI to flag missing facts and assumptions.</li>
-          <li>Run the prompt twice on the same input and compare the answers. Save version one. Before coffee, start a trial on three real inputs.</li>
-        </ol>
-        <h4>For example</h4>
-        <p>A board paper first extracts the facts, then states the decision sought, compares the options and writes the recommendation. An evidence brief collects source passages before making claims.</p>
+        <p>Define the inputs, write the method and try your prompt on three real examples.</p>
         <h4>What you will have</h4>
         <p>A first prompt that describes a repeatable working method, plus saved outputs that show where it still makes mistakes.</p>
       </div>
     </details></li>
-<li><details class="build-step" id="step-2">
-      <summary><span class="step-heading"><span class="step-number">Step 2</span><span class="step-title" role="heading" aria-level="3">Have the AI interview you and improve it.</span><span class="step-intro">Let the AI challenge your thinking and push for a tool you are proud of.</span><span class="step-cue">Read why and what you will do</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
+<li><details class="build-step" id="step-2" name="build-steps">
+      <summary><span class="step-heading"><span class="step-number">Step 2</span><span class="step-title" role="heading" aria-level="3">Have the AI interview you and improve it.</span><span class="step-intro">Let the AI challenge your thinking and push for a tool you are proud of.</span><span class="step-cue">Read why and what you will have</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
       <div class="step-body">
         <h4>Why this matters</h4>
-        <p>You know things about the job that your first prompt will leave unsaid. What counts as a serious change? Which requirement rules an option out? What must happen when information is missing?</p>
-        <p>These answers determine how the tool should work. The interview also uncovers useful functions you may not have requested, such as showing what would change a decision. The AI asks questions; you decide the business rules.</p>
-        <p>Ask the AI to stretch you. It should challenge vague answers, suggest functions you had not considered and push beyond your first idea. You learn to use it as a demanding design partner, working towards a tool you would be proud to put in your team's hands.</p>
+        <p>Your first prompt will leave some of your knowledge unsaid. The AI interviews you about missing facts, exceptions and business rules. It challenges vague answers and suggests useful functions; you decide what the tool must do.</p>
         <h4>What you will do</h4>
-        <ol>
-          <li>Review the results from three real inputs. Ask the AI to explain its failures, challenge your assumptions and interview you about what would make the tool excellent.</li>
-          <li>Define thresholds, weights, units, dates and terms. Specify the audience, required evidence and conditions that remove an option from consideration.</li>
-          <li>Decide how the tool handles exceptions, ambiguity and missing material. Set the limits of its use and when it must ask for help.</li>
-          <li>Add the useful functions the interview identifies. Rewrite the prompt, add a delivery checklist, rerun your examples and save version two.</li>
-        </ol>
-        <h4>For example</h4>
-        <p>A management accounts tool asks whether a change must exceed a rand amount, a percentage or both. A decision tool asks which criteria overlap. A contract tool asks whether deadlines use calendar or business days.</p>
+        <p>Use your trial results and the AI’s questions to agree the rules and improve the prompt.</p>
         <h4>What you will have</h4>
         <p>An improved prompt with explicit business rules, agreed functions, evidence requirements and clear instructions for cases it cannot answer.</p>
       </div>
     </details></li>
-<li><details class="build-step" id="step-3">
-      <summary><span class="step-heading"><span class="step-number">Step 3</span><span class="step-title" role="heading" aria-level="3">Create the template.</span><span class="step-intro">Give your prompt, skill or plugin an app people can use.</span><span class="step-cue">Read why and what you will do</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
+<li><details class="build-step" id="step-3" name="build-steps">
+      <summary><span class="step-heading"><span class="step-number">Step 3</span><span class="step-title" role="heading" aria-level="3">Create the template.</span><span class="step-intro">Give your tool input and result pages people can use.</span><span class="step-cue">Read why and what you will have</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
       <div class="step-body">
         <h4>Why this matters</h4>
-        <p>A tool needs a consistent way to collect its inputs as well as a consistent result. If a colleague forgets the weights, start date or rate card, even a good method cannot produce the right answer.</p>
-        <p>The result must also make the important information easy to find. A verdict, the reasons behind it and any missing evidence should appear in predictable places. The right format may be a table, chart, timeline, diagram or printable document.</p>
-        <p>The input and result pages give your prompt, skill or plugin the interface of an app. Someone can supply the information and read the result without rebuilding your prompt. The pages provide the interface; your instructions and program provide the working method.</p>
+        <p>Consistent input and result pages make your tool easier for someone else to use. Required fields prevent missing information. A predictable layout keeps the decision, reasons, evidence and warnings easy to find.</p>
         <h4>What you will do</h4>
-        <ol>
-          <li>Ask the AI to build an input page and a result page in HTML, the file format your browser displays.</li>
-          <li>Give the input page clear fields for the documents, notes and settings your tool needs. Label required information and explain what each field means.</li>
-          <li>Fix the result's headings, tables and places for evidence. Make missing information and warnings visible. Include print, download or interactive features where the chosen tool needs them.</li>
-          <li>Tell the AI to fill these templates consistently. Save the version, deliberately damage it and practise restoring the earlier one.</li>
-        </ol>
-        <h4>For example</h4>
-        <p>A supplier comparison collects the same facts for each quote and shows them side by side. A board paper puts the decision sought first. A case timeline keeps the source beside each event.</p>
+        <p>Build reusable input and result pages, then practise recovering a saved version.</p>
         <h4>What you will have</h4>
         <p>Reusable input and result pages that make the tool easier to run, read and check, plus a saved version you can recover.</p>
       </div>
     </details></li>
-<li><details class="build-step" id="step-4">
-      <summary><span class="step-heading"><span class="step-number">Step 4</span><span class="step-title" role="heading" aria-level="3">Add the Python program.</span><span class="step-intro">Make the result consistent and reduce the work you send to the AI.</span><span class="step-cue">Read why and what you will do</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
+<li><details class="build-step" id="step-4" name="build-steps">
+      <summary><span class="step-heading"><span class="step-number">Step 4</span><span class="step-title" role="heading" aria-level="3">Add the Python program.</span><span class="step-intro">Use Python for calculations and checks that need to give the same result every time.</span><span class="step-cue">Read why and what you will have</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
       <div class="step-body">
         <h4>Why this matters</h4>
-        <p>A large language model (LLM) generates text from patterns learned during training. A convincing number does not prove a calculation was run. Models can solve maths and use calculators, but generated arithmetic can still be wrong. A board deck or budget needs figures that were calculated and checked.</p>
-        <p>The same principle applies beyond money. Word limits, contract dates, duplicate records, scoring rules and exact quotes all need repeatable checks. Keep interpretation and drafting with the AI. Put precise calculations and rules into a program that follows the same instructions every run.</p>
-        <p>That also reduces token use. Once written, the program can calculate, sort and check in Cowork’s code environment without another LLM call for each operation. The same input and rules give the same calculated result. You use the AI where judgement is needed and make the final product much more consistent.</p>
+        <p>Generated arithmetic can be wrong even when it looks convincing. Totals, dates, scoring rules, word limits and exact quotes need repeatable calculations and checks. Python runs those rules consistently and reduces repeated AI calls. Code can contain mistakes too, so you check it against known answers.</p>
         <h4>What you will do</h4>
-        <ol>
-          <li>Identify everything your tool must calculate or check exactly. Ask the AI to write a small Python program for those jobs, replacing repeated model calls where possible.</li>
-          <li>Make the program check the input and the result: required fields, valid dates, totals, limits and contradictions. Define when it must stop and name a problem.</li>
-          <li>Have the AI use the program's results in its output. Check that figures in the commentary agree with the tables and that the evidence can be traced.</li>
-          <li>Work out three results by hand and compare them with the program. Code can contain mistakes too, and a correct formula cannot repair a misread input.</li>
-        </ol>
-        <h4>For example</h4>
-        <p>A funding application counts words and reconciles its budget. A timesheet catches overlapping hours. An evidence brief checks quotes against source text. A confidentiality checker applies the agreed verdict rules. Finding a quote verifies its wording, not whether its claim is true.</p>
+        <p>Have the AI write the program and compare its results with three answers you have checked independently.</p>
         <h4>What you will have</h4>
-        <p>A program that performs the exact work and reports failed checks, with results you have compared against known answers. Repeatable work runs as code, reducing unnecessary model calls and making the output more consistent.</p>
+        <p>A program that performs calculations and exact checks, reports failures and uses results you have compared against known answers.</p>
       </div>
     </details></li>
-<li><details class="build-step" id="step-5">
-      <summary><span class="step-heading"><span class="step-number">Step 5</span><span class="step-title" role="heading" aria-level="3">Test it and prepare it for handover.</span><span class="step-intro">Have the AI create and run far more test cases than you would tackle by hand.</span><span class="step-cue">Read why and what you will do</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
+<li><details class="build-step" id="step-5" name="build-steps">
+      <summary><span class="step-heading"><span class="step-number">Step 5</span><span class="step-title" role="heading" aria-level="3">Test it and prepare it for handover.</span><span class="step-intro">Have the AI create and run far more test cases than you would tackle by hand.</span><span class="step-cue">Read why and what you will have</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
       <div class="step-body">
         <h4>Why this matters</h4>
-        <p>A polished page and one successful example do not establish that the tool works. It may fail on a missing value, a different file layout or a case just outside a rule. It must also handle a clean input without inventing problems.</p>
-        <p>Asking an AI whether its work looks right is not enough. Each test needs an expected answer you can check independently. Another person must also be able to use the tool without relying on instructions that exist only in your head.</p>
-        <p>You do not have to invent and run every case yourself. Teach the AI to generate synthetic test inputs, vary them systematically and run them in large batches. It can explore combinations you would rarely have time to try by hand. You check how the expected answers were established and review the failures.</p>
+        <p>One successful example does not show that a tool works reliably. Asking an AI whether its work looks right is not enough. Tests need expected answers you can check independently. Another person must also be able to use the tool without your help.</p>
         <h4>What you will do</h4>
-        <ol>
-          <li>Ask the AI to generate ordinary cases, difficult cases and deliberately broken inputs. Set rules for the expected answers and verify a sample independently.</li>
-          <li>Include missing information, contradictory figures, duplicates, ties, different layouts and values exactly at a rule's limit, as relevant to your tool.</li>
-          <li>Have the AI write and run a batch test program. Compare actual and expected results, report failures and check source evidence. Confirm that unsupported inputs trigger a warning or stop. Save the cases and rerun the batch after fixes.</li>
-          <li>Start a separate Cowork review task to look for faults. Add start-here instructions and sample inputs, then let a neighbour run the tool without help. Fix what fails and upload the finished version to the course Dropbox folder.</li>
-        </ol>
-        <h4>For example</h4>
-        <p>A contract test includes a leap day and a weekend deadline. A shortlist test includes a strong candidate missing a must-have. A quote check includes one altered word. A clean roster must report no rule breaks.</p>
+        <p>Run batches of normal and difficult cases, review failures and let a neighbour try the tool.</p>
         <h4>What you will have</h4>
-        <p>A tool with a repeatable batch of tests, checked examples, clear limits and instructions another person has tried. At 17:00, share it with the group using sample inputs.</p>
+        <p>A tested tool with checked examples, clear limits and instructions another person has tried. Share it with the group using sample inputs.</p>
       </div>
     </details></li>
 </ol>
+        </div>
+      </section>
+      <details class="course-section" id="demos">
+        <summary><span class="section-heading"><span class="label">Demonstrations and extras</span><span class="section-title" role="heading" aria-level="2">See the tools. Keep the tools.</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
+        <div class="section-body">
           <div class="demo-content">
-            <p class="label">Advanced use cases throughout the day</p>
-            <h3>See the tools. Keep the tools.</h3>
-            <p>You may recognise some tools if you attended a recent masterclass. This course demonstrates and supplies our latest versions, with the improvements made since earlier courses. You also see how they are built and take home the current files.</p>
+            <p>See how our latest tools are built and take home the current files, including improvements since earlier courses.</p>
             <ul class="demo-list">
               <li><strong>Excel model builder.</strong> Turn one paragraph into a full Excel model, with a logic tree you approve first and a program that checks the model balances.</li>
               <li><strong>Dashboard builder.</strong> Turn a spreadsheet into an interactive dashboard, with every figure checked against your original file.</li>
               <li><strong>Gantt creator.</strong> Turn a list of tasks into an interactive Gantt chart and an Excel plan, with the dates and critical path worked out by a program.</li>
               <li><strong>Board pack reader.</strong> Work through a whole board pack part by part and get one report that flags figures that do not add up or contradict each other.</li>
               <li><strong>Queryable index on a large folder of data.</strong> Ask questions across a large folder of documents and data, and find the source behind each answer.</li>
-              <li><strong>Always-on agents: Grok bot, Duet and Dot.</strong> A demonstration over lunch of agents that keep working between requests.</li>
+              <li><strong>AI assistants that keep working between requests.</strong> A lunchtime demonstration of agents that carry out tasks without waiting for a new prompt at every step.</li>
               <li><strong>Make your AI subscription go further.</strong> Learn what the KV cache is and how working at the right pace cuts your costs.</li>
               <li><strong>Explainer videos.</strong> Turn a topic, a report, bullet points, an existing presentation or your monthly results into a complete narrated explainer video, in the style you choose.</li>
               <li><strong>The finished tool pack.</strong> Excel models, dashboards, a board pack reader, Gantt charts, hand-drawn slides, slide script builders, an explainer video and an issue tree.</li>
@@ -189,12 +137,12 @@
         </div>
       </details>
       <details class="course-section" id="agenda">
-        <summary><span class="section-heading"><span class="label">08:00 doors open · 08:30 start</span><span class="section-title" role="heading" aria-level="2">The full day agenda.</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
+        <summary><span class="section-heading"><span class="label">08:00 doors open · 08:30 start · 18:00 finish</span><span class="section-title" role="heading" aria-level="2">The full day agenda.</span></span><span class="toggle-icon" aria-hidden="true"></span></summary>
         <div class="section-body"><p>A full day of building, demonstrations and checking. Your AI continues the longer jobs through the breaks.</p><div class="table-wrap"><table class="agenda-table"><caption>The advanced masterclass programme</caption><thead><tr><th scope="col">Time</th><th scope="col">Topic</th></tr></thead>
 <tbody aria-labelledby="agenda-part-1"><tr class="agenda-group"><td aria-hidden="true"></td><th id="agenda-part-1" scope="rowgroup">Doors open</th></tr>
 <tr class="agenda-session"><th scope="row"><time>08:00</time></th><td>Coffee and laptop first aid</td></tr>
 </tbody>
-<tbody aria-labelledby="agenda-part-2"><tr class="agenda-group"><td aria-hidden="true"></td><th id="agenda-part-2" scope="rowgroup">By 5pm you own a tool that does real work for you</th></tr>
+<tbody aria-labelledby="agenda-part-2"><tr class="agenda-group"><td aria-hidden="true"></td><th id="agenda-part-2" scope="rowgroup">By 18:00 you own a tool that does real work for you</th></tr>
 <tr class="agenda-session"><th scope="row"><time>08:30</time></th><td>Welcome back: claim your tool. No two delegates build the same one</td></tr>
 <tr class="agenda-session"><th scope="row"><time>08:45</time></th><td>Demo: A full Excel model from one paragraph.</td></tr>
 <tr class="agenda-session"><th scope="row"><time>09:05</time></th><td>Demo: Dashboards</td></tr>
@@ -205,11 +153,11 @@
 <tbody aria-labelledby="agenda-part-3"><tr class="agenda-group"><td aria-hidden="true"></td><th id="agenda-part-3" scope="rowgroup">The build: your prompt becomes a tool your whole team can run</th></tr>
 <tr class="agenda-session"><th scope="row"><time>10:40</time></th><td>Step 1 of 5: Write the prompt for your tool. Run it twice. Watch it give two different answers</td></tr>
 <tr class="agenda-session"><th scope="row"><time>11:15</time></th><td>Demo: A board pack reader</td></tr>
-<tr class="agenda-session"><th scope="row"><time>11:35</time></th><td>Step 2 of 5: Make the AI interview you, mark its own work and rebuild your prompt</td></tr>
+<tr class="agenda-session"><th scope="row"><time>11:35</time></th><td>Step 2 of 5: Have the AI interview you, clarify your business rules and improve your prompt</td></tr>
 <tr class="agenda-session"><th scope="row"><time>12:15</time></th><td>Demo: Queryable index on a large folder of data. Ask a question and find the source</td></tr>
 <tr class="agenda-session"><th scope="row"><time>12:35</time></th><td>Step 3 of 5: Create your tool’s template. One polished page, the same every time</td></tr>
 <tr class="agenda-break"><th scope="row"><time>13:15</time></th><td><strong>Lunch. Your AI works through the break, filling your template with three real cases</strong></td></tr>
-<tr class="agenda-session"><th scope="row"><time>13:50</time></th><td>Demo over lunch: AI agents that work while you sleep (Grok bot, Duet, Dot)</td></tr>
+<tr class="agenda-session"><th scope="row"><time>13:50</time></th><td>Demo over lunch: AI assistants that carry out tasks between requests, without a new prompt at every step</td></tr>
 <tr class="agenda-session"><th scope="row"><time>14:10</time></th><td>Step 4 of 5: Move calculations into Python and check the results</td></tr>
 <tr class="agenda-session"><th scope="row"><time>14:50</time></th><td>Demo: Make your AI subscription go further. Understand the KV cache, manage reusable context and reduce token spend</td></tr>
 <tr class="agenda-session"><th scope="row"><time>15:10</time></th><td>Step 5 of 5: Test and prepare to share. Run batch tests and start a separate Cowork review task</td></tr>
@@ -222,7 +170,6 @@
 <tr class="agenda-session"><th scope="row"><time>17:20</time></th><td>Your 100-day plan: the next five jobs that deserve a tool, and who will build them</td></tr>
 <tr class="agenda-session"><th scope="row"><time>17:45</time></th><td>Name the date your tool does its first real job</td></tr>
 <tr class="agenda-break"><th scope="row"><time>18:00</time></th><td><strong>Home, with a working tool on your laptop and a copy in the course Dropbox folder</strong></td></tr>
-<tr class="agenda-break"><th scope="row"><time>18:10</time></th><td><strong>Allow until 18:10 for final questions</strong></td></tr>
 </tbody>
 </table></div></div>
       </details>
@@ -310,8 +257,8 @@
     </div>
     <section class="pricing" id="pricing" aria-labelledby="pricing-title">
       <div class="container pricing-grid">
-        <div><p class="label">Book your advanced day</p><h2 id="pricing-title">A repeatable power skill.<br>A library of tools.</h2><p>Course one showed you what AI can do and helped you understand how to use it.</p><p>Course two teaches you the fundamental advanced skill of turning business tasks into reusable AI tools with Claude Cowork. It may be the only advanced AI skill you need for business. You learn to build, test and improve your own tools. You also leave with your own tested tool, our latest tools and every tool built by the group.</p></div>
-        <div class="price-card"><dl><div><dt>Standard price</dt><dd>R10 500</dd></div><div class="insider-price"><dt>Daily Maverick Insiders</dt><dd>R9 500</dd></div></dl><p class="subscription-note"><strong>Required separately:</strong> Claude Pro at US$20/month, billed monthly, before applicable tax. An existing higher Claude plan with Cowork access also meets the requirement.</p><a class="button primary" href="https://shop.dailymaverick.co.za/product-category/tickets/the-genai-exec-masterclass/" target="_blank" rel="noopener">Book through Daily Maverick <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></div>
+        <div><p class="label">Book your advanced day</p><h2 id="pricing-title">A repeatable power skill.<br>A library of tools.</h2><p><strong>Johannesburg · 3 December or 4 December 2026.</strong> Choose one day, 08:30–18:00.</p><p>Learn to build, test and improve reusable business tools. Leave with your own tested tool, our latest tools and every tool built by the group.</p></div>
+        <div class="price-card"><dl><div><dt>Standard price</dt><dd>R11 000</dd></div><div class="insider-price"><dt>Daily Maverick Insiders</dt><dd>R10 500</dd></div></dl><p class="subscription-note"><strong>Required separately:</strong> Claude Pro at US$20/month, billed monthly, before applicable tax. An existing higher Claude plan with Cowork access also meets the requirement.</p><a class="button primary" href="https://shop.dailymaverick.co.za/product-category/tickets/the-genai-exec-masterclass/" target="_blank" rel="noopener">Book through Daily Maverick <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></div>
       </div>
     </section>
   </main>

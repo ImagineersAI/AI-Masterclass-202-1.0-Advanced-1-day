@@ -63,6 +63,7 @@ h3 { font-size: 24px; line-height: 1.2; }
 
 .course-content { padding-bottom: 48px; }
 .course-section { border-bottom: 1px solid var(--rule-hard); scroll-margin-top: 24px; }
+.overview-heading { padding-block: 28px; }
 summary { display: flex; align-items: center; justify-content: space-between; gap: 24px; list-style: none; padding-block: 28px; cursor: pointer; }
 summary::-webkit-details-marker { display: none; }
 summary:hover .section-title, summary:hover .step-title { color: var(--oa); }
